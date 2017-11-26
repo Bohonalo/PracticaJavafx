@@ -14,17 +14,33 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.stage.Window;
 
+
+/**
+ * The Class MainController.
+ */
 public class MainController {
 	
 	
+    /** The btn cerrar. */
     @FXML
     private Button btnCerrar;
 	
-   @FXML
+
+    /**
+     * Cerrar.
+     *
+     * @param event the event
+     */
+    @FXML
    void cerrar(MouseEvent event) {
    	System.exit(0);
    }
    
+   /**
+    * Cerrar segunda ventana.
+    *
+    * @param event the event
+    */
    @FXML
    void cerrarSegundaVentana(MouseEvent event ) {
 	   
@@ -34,6 +50,9 @@ public class MainController {
 	   }
      
 
+   /**
+    * Mostrar ventana secundaria.
+    */
    public void mostrarVentanaSecundaria() {
        try {
            FXMLLoader loader = new FXMLLoader(Main.class.getResource("../views/Superheader.fxml"));

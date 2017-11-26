@@ -10,7 +10,18 @@ import javafx.scene.text.Font;
 import javafx.fxml.FXMLLoader;
 
 
+/**
+ * The main clas
+ * @author Juan
+ * @version 1.0
+ * @since 24-11-2017
+ * @see MainController
+ */
 public class Main extends Application {
+	/**
+	 * @param primaryStage the primary stage
+	 * @see Override start
+	 */
 	@Override
 	public void start(Stage primaryStage) {
 		
@@ -31,6 +42,10 @@ public class Main extends Application {
 		}
 	}
 	
+	/**
+	 * The main metehod
+	 * @param args the arguments
+	 */
 	public static void main(String[] args) {
 		launch(args);
 	}
